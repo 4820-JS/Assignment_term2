@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1>Assignment 1</h1>
+    
+    <form id="form_area">
+        <label for="food_name">Food name:</label>
+        <input type="text" id="food_name" required>
+        <br>
+        
+        <label for="carbs">Carb per 100g:</label>
+        <input type="number" id="carbs" required>
+        <br>
+        
+        <label for="fat">Fat per 100g:</label>
+        <input type="number" step="0.01" min="0" id="fat" required>
+        <br>
+        
+        <label for="protein">Protein per 100g:</label>
+        <input type="number" step="0.01" min="0" id="protein" required>
+        <br>
+        
+        <button id="submit_btn" step="0.01" min="0" type="submit">Submit</button>
+        <br>
+    </form>
+    
+    <button id="calculate_highest">Calculate Highest</button>
+    
+    <div id="info_area">
+        <!-- <p>Results will be displayed here.</p> -->
+    </div>
+</body>
+</html>
