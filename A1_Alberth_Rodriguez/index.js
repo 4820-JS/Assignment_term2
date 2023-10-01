@@ -51,20 +51,13 @@ submit_Btn.addEventListener("submit", function (event) {//add addEventListener f
     form_area.reset()// Reset form
 
     info_area.innerHTML = ''
-    // info_area.reset()
 
     const names = []
 
     for (let i = 0; i < foods.length; i++){
-        // console.log(foods[i].name)
         names.push(foods[i].name)
-        // console.log(names)
         info_area.innerHTML = names.join(' ')
     }
-
-    // console.log(foods)
-    // console.log(typeof foods[0])
-    // console.log(foods.length)
 });
 
 calculate_highestBtn.addEventListener("click", function (event) {//add addEventListener for the calculate button
